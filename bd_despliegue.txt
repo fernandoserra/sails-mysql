@@ -1,0 +1,37 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 02-07-2017 a las 04:04:07
+-- Versión del servidor: 5.5.24-log
+-- Versión de PHP: 5.4.3
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Base de datos: `bd_despliegue`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `producto`
+--
+
+CREATE TABLE IF NOT EXISTS `producto` (
+  `id_producto` int(10) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(150) NOT NULL,
+  `costo` float NOT NULL,
+  `descripcion` varchar(300) NOT NULL,
+  PRIMARY KEY (`id_producto`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`id_producto`, `nombre`, `costo`, `descripcion`) VALUES
+(1, 'Laptop', 300000, 'Laptop hp procesador i5'),
+(2, 'Tablet', 250000, 'Tablet samsung');
